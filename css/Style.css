@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 2px;
+    border: 1px solid;
+}
+
+.section p {
+    padding: 5px;
+    background-color: white;
+    margin-bottom: 10px 0;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.section img {
+    max-width: 40%;
+    height: auto;
+}
+
+.button {
+
+    padding: 10px;
+    background-color: #f04c00;
+    color: white;
+    border: 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+.button:hover {
+    background-color: #ffae00;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #f04c00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #e45b00;
+}
+
+.productos {
+    padding: 0px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+}
+
+.producto {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+    flex-grow: 1;
+    /* Asegura que los productos tengan el mismo alto */
+    padding: 20px;
+}
+
+.producto img {
+    width: 100%;
+    /* Ocupa todo el ancho del contenedor */
+    height: 200px;
+    /* Fija la altura de la imagen */
+    object-fit: cover;
+    /* Asegura que la imagen mantenga sus proporciones */
+}
+
+.producto h2,
+.producto p {
+    margin: 0 0 5px 0;
+}
+
+footer {
+    margin-top: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
